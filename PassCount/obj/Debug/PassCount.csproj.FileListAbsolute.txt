@@ -1,0 +1,11 @@
+D:\Repositorios\PassCount\PassCount\bin\Debug\PassCount.exe
+D:\Repositorios\PassCount\PassCount\bin\Debug\PassCount.pdb
+D:\Repositorios\PassCount\PassCount\obj\Debug\PassCount.FormLogin.resources
+D:\Repositorios\PassCount\PassCount\obj\Debug\PassCount.Properties.Resources.resources
+D:\Repositorios\PassCount\PassCount\obj\Debug\PassCount.csproj.GenerateResource.Cache
+D:\Repositorios\PassCount\PassCount\obj\Debug\PassCount.exe
+D:\Repositorios\PassCount\PassCount\obj\Debug\PassCount.pdb
+D:\Repositorios\PassCount\PassCount\bin\Debug\Newtonsoft.Json.dll
+D:\Repositorios\PassCount\PassCount\bin\Debug\Newtonsoft.Json.xml
+D:\Repositorios\PassCount\PassCount\obj\Debug\PassCount.FormNewItem.resources
+D:\Repositorios\PassCount\PassCount\obj\Debug\PassCount.FormNewKey.resources
