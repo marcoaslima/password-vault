@@ -1,4 +1,5 @@
-﻿using PassCount.Model;
+﻿using PassCount.Config;
+using PassCount.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,19 +11,22 @@ using System.Windows.Forms;
 
 namespace PassCount
 {
-    public partial class FormLogin : Form
+    public partial class FormMain : Form
     {
         public Root Raiz { get; set; }
         public String Path { get; set; }
 
+        public AppConf Config { get; set; }
+
         public String Key { get; set; }
 
-        public FormLogin()
+        public FormMain(AppConf appConf)
         {
             InitializeComponent();
 
             this.Raiz = new Root();
             this.Path = null;
+            this.Config = appConf;
         }
 
         private void novoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -162,6 +166,11 @@ namespace PassCount
             {
 
             }
+        }
+
+        private void menuStartPage_Click(object sender, EventArgs e)
+        {
+            Utils.OpenPage(this.Config.startpage);
         }
     }
 }

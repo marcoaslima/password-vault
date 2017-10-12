@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>PassCount</RootNamespace>
-    <AssemblyName>PassCount</AssemblyName>
+    <AssemblyName>passvault</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -50,22 +50,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormLogin.cs">
+    <Compile Include="Config\AppConf.cs" />
+    <Compile Include="Config\Recent.cs" />
+    <Compile Include="Config\Window.cs" />
+    <Compile Include="Model\Utils.cs" />
+    <Compile Include="View\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLogin.Designer.cs">
-      <DependentUpon>FormLogin.cs</DependentUpon>
+    <Compile Include="View\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNewItem.cs">
+    <Compile Include="View\FormNewItem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormNewItem.Designer.cs">
+    <Compile Include="View\FormNewItem.Designer.cs">
       <DependentUpon>FormNewItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNewKey.cs">
+    <Compile Include="View\FormNewKey.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormNewKey.Designer.cs">
+    <Compile Include="View\FormNewKey.Designer.cs">
       <DependentUpon>FormNewKey.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Conta.cs" />
@@ -76,13 +80,13 @@
     <Compile Include="Model\Root.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormLogin.resx">
-      <DependentUpon>FormLogin.cs</DependentUpon>
+    <EmbeddedResource Include="View\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormNewItem.resx">
+    <EmbeddedResource Include="View\FormNewItem.resx">
       <DependentUpon>FormNewItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormNewKey.resx">
+    <EmbeddedResource Include="View\FormNewKey.resx">
       <DependentUpon>FormNewKey.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

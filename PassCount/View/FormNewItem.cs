@@ -12,11 +12,11 @@ namespace PassCount
 {
     public partial class FormNewItem : Form
     {
-        public FormLogin Parent { get; set; }
+        public FormMain Parent { get; set; }
         public ItemType Type { get; set; }
         public String Path { get; set; }
 
-        public FormNewItem(FormLogin Parent, ItemType Type, String Path = null)
+        public FormNewItem(FormMain Parent, ItemType Type, String Path = null)
         {
             InitializeComponent();
 

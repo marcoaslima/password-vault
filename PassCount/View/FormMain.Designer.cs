@@ -1,6 +1,6 @@
 ﻿namespace PassCount
 {
-    partial class FormLogin
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -29,31 +29,39 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.novaContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.novaChaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salvarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.alterarChaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.excluirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.opçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novaContaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novaChaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.configuraçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ajudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuGetUpdate = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.menuStartPage = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,11 +95,26 @@
             this.dataGridView1.Size = new System.Drawing.Size(784, 479);
             this.dataGridView1.TabIndex = 1;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.excluirToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(109, 26);
+            // 
+            // excluirToolStripMenuItem
+            // 
+            this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
+            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.excluirToolStripMenuItem.Text = "Excluir";
+            this.excluirToolStripMenuItem.Click += new System.EventHandler(this.excluirToolStripMenuItem_Click);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arquivoToolStripMenuItem,
-            this.opçõesToolStripMenuItem});
+            this.opçõesToolStripMenuItem,
+            this.ajudaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(784, 24);
@@ -103,6 +126,7 @@
             this.arquivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.novoToolStripMenuItem,
             this.abrirToolStripMenuItem,
+            this.recentesToolStripMenuItem,
             this.toolStripSeparator1,
             this.salvarToolStripMenuItem,
             this.salvarComoToolStripMenuItem,
@@ -113,29 +137,6 @@
             this.arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
             this.arquivoToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.arquivoToolStripMenuItem.Text = "Arquivo";
-            // 
-            // opçõesToolStripMenuItem
-            // 
-            this.opçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.novaContaToolStripMenuItem,
-            this.novaChaveToolStripMenuItem});
-            this.opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
-            this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.opçõesToolStripMenuItem.Text = "Opções";
-            // 
-            // novaContaToolStripMenuItem
-            // 
-            this.novaContaToolStripMenuItem.Name = "novaContaToolStripMenuItem";
-            this.novaContaToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.novaContaToolStripMenuItem.Text = "Nova Conta";
-            this.novaContaToolStripMenuItem.Click += new System.EventHandler(this.novaContaToolStripMenuItem_Click);
-            // 
-            // novaChaveToolStripMenuItem
-            // 
-            this.novaChaveToolStripMenuItem.Name = "novaChaveToolStripMenuItem";
-            this.novaChaveToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.novaChaveToolStripMenuItem.Text = "Nova Chave";
-            this.novaChaveToolStripMenuItem.Click += new System.EventHandler(this.novaChaveToolStripMenuItem_Click);
             // 
             // novoToolStripMenuItem
             // 
@@ -153,6 +154,18 @@
             this.abrirToolStripMenuItem.Text = "Abrir";
             this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
             // 
+            // recentesToolStripMenuItem
+            // 
+            this.recentesToolStripMenuItem.Name = "recentesToolStripMenuItem";
+            this.recentesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.R)));
+            this.recentesToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.recentesToolStripMenuItem.Text = "Recentes";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
+            // 
             // salvarToolStripMenuItem
             // 
             this.salvarToolStripMenuItem.Name = "salvarToolStripMenuItem";
@@ -169,11 +182,6 @@
             this.salvarComoToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.salvarComoToolStripMenuItem.Text = "Salvar como";
             this.salvarComoToolStripMenuItem.Click += new System.EventHandler(this.salvarComoToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(208, 6);
             // 
             // toolStripSeparator2
             // 
@@ -198,19 +206,76 @@
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
-            // contextMenuStrip1
+            // opçõesToolStripMenuItem
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.excluirToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(109, 26);
+            this.opçõesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novaContaToolStripMenuItem,
+            this.novaChaveToolStripMenuItem,
+            this.toolStripSeparator5,
+            this.configuraçõesToolStripMenuItem});
+            this.opçõesToolStripMenuItem.Name = "opçõesToolStripMenuItem";
+            this.opçõesToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.opçõesToolStripMenuItem.Text = "Opções";
             // 
-            // excluirToolStripMenuItem
+            // novaContaToolStripMenuItem
             // 
-            this.excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
-            this.excluirToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
-            this.excluirToolStripMenuItem.Text = "Excluir";
-            this.excluirToolStripMenuItem.Click += new System.EventHandler(this.excluirToolStripMenuItem_Click);
+            this.novaContaToolStripMenuItem.Name = "novaContaToolStripMenuItem";
+            this.novaContaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.novaContaToolStripMenuItem.Text = "Nova Conta";
+            this.novaContaToolStripMenuItem.Click += new System.EventHandler(this.novaContaToolStripMenuItem_Click);
+            // 
+            // novaChaveToolStripMenuItem
+            // 
+            this.novaChaveToolStripMenuItem.Name = "novaChaveToolStripMenuItem";
+            this.novaChaveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.novaChaveToolStripMenuItem.Text = "Nova Chave";
+            this.novaChaveToolStripMenuItem.Click += new System.EventHandler(this.novaChaveToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(149, 6);
+            // 
+            // configuraçõesToolStripMenuItem
+            // 
+            this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
+            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.configuraçõesToolStripMenuItem.Text = "Configurações";
+            // 
+            // ajudaToolStripMenuItem
+            // 
+            this.ajudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sobreToolStripMenuItem,
+            this.menuGetUpdate,
+            this.toolStripSeparator4,
+            this.menuStartPage});
+            this.ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
+            this.ajudaToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.ajudaToolStripMenuItem.Text = "Ajuda";
+            // 
+            // sobreToolStripMenuItem
+            // 
+            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sobreToolStripMenuItem.Text = "Sobre";
+            // 
+            // menuGetUpdate
+            // 
+            this.menuGetUpdate.Name = "menuGetUpdate";
+            this.menuGetUpdate.Size = new System.Drawing.Size(152, 22);
+            this.menuGetUpdate.Text = "Atualizações";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(149, 6);
+            // 
+            // menuStartPage
+            // 
+            this.menuStartPage.Name = "menuStartPage";
+            this.menuStartPage.Size = new System.Drawing.Size(152, 22);
+            this.menuStartPage.Text = "Página Inicial";
+            this.menuStartPage.Click += new System.EventHandler(this.menuStartPage_Click);
             // 
             // panel1
             // 
@@ -245,7 +310,7 @@
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // FormLogin
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -257,13 +322,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "FormLogin";
+            this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Senhas Seguras";
+            this.Text = "Password Vault - Gerenciador de senhas";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -293,6 +358,14 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem recentesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem configuraçõesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ajudaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuGetUpdate;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem menuStartPage;
 
     }
 }

@@ -11,9 +11,9 @@ namespace PassCount
 {
     public partial class FormNewKey : Form
     {
-        public FormLogin Parent { get; set; }
+        public FormMain Parent { get; set; }
 
-        public FormNewKey(FormLogin Parent)
+        public FormNewKey(FormMain Parent)
         {
             InitializeComponent();
             this.Parent = Parent;

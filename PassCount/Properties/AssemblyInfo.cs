@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PassCount")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Password Vault")]
+[assembly: AssemblyDescription("Gerenciador de senhas")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PassCount")]
+[assembly: AssemblyCompany("@marckdx")]
+[assembly: AssemblyProduct("MDX Plataform")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

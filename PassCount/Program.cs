@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PassCount.Config;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -15,7 +16,10 @@ namespace PassCount
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            AppConf appConf = AppConf.Get();
+            FormMain formMain = new FormMain(appConf);
+            formMain.WindowState = appConf.window.fullsreen ? FormWindowState.Maximized : FormWindowState.Normal;
+            Application.Run(formMain);
         }
     }
 }
